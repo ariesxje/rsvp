@@ -89,10 +89,10 @@ const Schedule = ({
                                                             </div>
                                                         </Link>
                                                         <Iframe
-                                                            title="Map for Stones of the Yarra Valley, Saint Huberts Road, Coldstream VIC, Australia"
-                                                            width="" height="320px"
-                                                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB9ePoqHL2N2xqOhy2H_7vjDokVDIq8-fE&amp;zoom=10&amp;q=place_id%3AChIJ0RMxyVYr1moR2m6tM6XJ5ZU"
-                                                            className="Linkifystyles__StyledLinkifyWrapper-sc-za1d5g-0 eUydfu"></Iframe>
+                                                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d154617.69986726134!2d145.20118450929272!3d-37.74715873680374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad62b56c93113d1%3A0x95e5c9a533ad6eda!2sStones%20of%20the%20Yarra%20Valley!5e0!3m2!1sen!2sau!4v1744821851279!5m2!1sen!2sau"
+                                                          width="" height="320px" allowFullScreen=""
+                                                          loading="lazy"
+                                                          referrerPolicy="no-referrer-when-downgrade"></Iframe>
                                                     </div>
                                                 </div>
                                             </div>
