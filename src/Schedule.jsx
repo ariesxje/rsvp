@@ -14,6 +14,7 @@ import LocationMarkIcon from "./svg/locationMark.jsx";
 import {useEffect, useRef} from "react";
 import {useElementAboveScreenMidpoint} from "./hooks/useElementAtScreenMidPoint.js";
 import useIsMobile from "./hooks/useWindowDimensions.js";
+import {AddToCalendarButton} from "add-to-calendar-button-react";
 
 const Schedule = ({
     onVisible,
@@ -57,8 +58,18 @@ const Schedule = ({
                                                     <EventTime>4:30 PM to 11:00 PM</EventTime>
                                                 </div>
                                                 <div style={{marginTop: '2.5rem', columnGap: '0.375rem', display: 'flex'}}>
-                                                    <Button>
-                                                        <span style={{display: 'inline-flex', marginRight: '0.5rem'}}><StyledCalenderIcon></StyledCalenderIcon></span>Add to Calender
+                                                    <Button
+                                                      name="KK's Wedding"
+                                                      description="[p]We can't wait to seeing you at our wedding! Please check on latest update here in our [url]https://ariesxje.github.io/rsvp/|Wedding Invitation[/url][/p]"
+                                                      options={['Apple','Google']}
+                                                      location="Melbourne"
+                                                      startDate="2026-01-05"
+                                                      endDate="2026-01-05"
+                                                      startTime="16:30"
+                                                      endTime="23:00"
+                                                      timeZone="Australia/Melbourne"
+                                                      trigger="click"
+                                                    >
                                                     </Button>
                                                 </div>
                                             </ItemSecondary>
@@ -253,12 +264,11 @@ const EventTime = styled.div`
     color: rgb(118, 118, 118);
 `
 
-const Button = styled.button`
+const Button = styled(AddToCalendarButton)`
     margin: 0;
     overflow: visible;
     cursor: pointer;
-    display: inline-flex
-;
+    display: inline-flex;
     appearance: none;
     -webkit-box-align: center;
     align-items: center;
@@ -266,7 +276,7 @@ const Button = styled.button`
     justify-content: center;
     border-radius: 9999px;
     vertical-align: middle;
-    border: 2px solid rgb(235, 235, 235);
+    //border: 2px solid rgb(235, 235, 235);
     text-decoration: none;
     position: relative;
     white-space: nowrap;
@@ -279,8 +289,8 @@ const Button = styled.button`
     font-feature-settings: "tnum", "lnum";
     height: 3rem;
     min-width: 3rem;
-    padding-right: 0.75rem;
-    padding-left: 0.75rem;
+    //padding-right: 0.75rem;
+    //padding-left: 0.75rem;
     background-color: transparent;
     color: rgb(51, 51, 51);
 
@@ -290,9 +300,9 @@ const Button = styled.button`
         width: 260px;
     }
     
-    &:hover {
-        background-color: rgb(247, 247, 247);
-    }
+    //&:hover {
+    //    background-color: rgb(247, 247, 247);
+    //}
 `
 
 const StyledCalenderIcon = styled(CalenderPlusIcon)`
