@@ -36,7 +36,7 @@ const Home = ({
                     </ImageOverlay>
                 </Hero>
             }
-            <SectionContainer>
+            <SectionContainer id='welcomeMessage'>
                 <Container>
                     <Background1>
                         <BackgroundContent1></BackgroundContent1>

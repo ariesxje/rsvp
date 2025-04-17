@@ -47,6 +47,10 @@ const VideoModal = ({
     const closeAndPauseVideo = () => {
         playerRef.current?.pause();
         onClose();
+        setTimeout(() => {
+            iframeRef.current.style.display = 'none';
+            iframeRef.current.style.visibility = 'hidden';
+        }, 2000)
     }
 
     const playVideo = () => {
@@ -57,7 +61,7 @@ const VideoModal = ({
         <div  id="modal-container2">
             <div className="modal-background">
                 {showCloseButton && <CloseButton onClick={closeAndPauseVideo}>skip</CloseButton>}
-                <div className="modal" style={{padding: 0}}>
+                <div className="modal" style={{padding: 0, background: 'transparent'}}>
                     <VideoContainer>
                         <iframe src="https://player.vimeo.com/video/1073956329?h=7b50ff2ee3&amp;app_id=122963"
                                  frameBorder="0"
@@ -102,7 +106,7 @@ const CloseButton = styled.button`
     background-color: transparent;
     z-index: 1300;
     border: none;
-    color: #888888;
+    color: white;
 `
 
 const StyledCloseIcon  = styled(CrossIcon)`

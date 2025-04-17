@@ -43,7 +43,7 @@ const FAQ = ({
                     <div style={{flexDirection: 'column', display: 'flex'}}>
                         <BigContentColumn>
                             <Question>When is the RSVP deadline?</Question>
-                            <Answer><p>Please RSVP by the 1st of June, so we can have an estimate for catering. 🥰 We hope you’ll be able to join us on our special day, but we completely understand if you’re unable to make it. Your love and well wishes mean the world to us either way! <Link href="#welcome">Click me to RSVP</Link></p></Answer>
+                            <Answer><p>Please RSVP by the 31st of May, so we can have an estimate for catering. 🥰 We hope you’ll be able to join us on our special day, but we completely understand if you’re unable to make it. Your love and well wishes mean the world to us either way! (<Link href="#welcomeMessage">Take me to RSVP</Link>)</p></Answer>
                         </BigContentColumn>
                         <BigContentColumn>
                             <Question>Can I bring a date?</Question>
@@ -63,7 +63,7 @@ const FAQ = ({
                         </BigContentColumn>
                         <BigContentColumn>
                             <Question>Where should I park?</Question>
-                            <Answer><p>Free car parking is available for guests, as you head down the entrance of The Stones driveway, veer left (follow "The Stables" signage) and head towards the hedges for convenient parking.</p></Answer>
+                            <Answer><p>Our reception is at the <b>Stables</b>, not the Barn. Free car parking is available for guests, as you head down the entrance of The Stones driveway, veer <b>left</b> (follow "The Stables" signage) and head towards the hedges for convenient parking.</p></Answer>
                             <img style={{marginTop: 20}} src={Map} />
                         </BigContentColumn>
                         <BigContentColumn>
