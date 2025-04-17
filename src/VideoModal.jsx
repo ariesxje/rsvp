@@ -31,7 +31,17 @@ const VideoModal = ({
             setShowPlayButton(true)
         })
 
-        return () => clearTimeout(timeout)
+        const setRealViewportHeight = () => {
+            const vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+        setRealViewportHeight();
+        window.addEventListener('resize', setRealViewportHeight);
+
+        return () => {
+            clearTimeout(timeout)
+            window.removeEventListener('resize', setRealViewportHeight);
+        }
     }, []);
 
     const closeAndPauseVideo = () => {
@@ -71,7 +81,7 @@ const VideoModal = ({
 const VideoContainer = styled.div`
     position: relative;
     aspect-ratio: 240 / 427;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     max-width: 100vw;
     
     & iframe, & video {
