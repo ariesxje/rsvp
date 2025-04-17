@@ -38,7 +38,7 @@ const Registry = ({
                     </SectionImageContainer>
                 }
                 <Title>Registry</Title>
-                <ContentContainer><p>We're lucky to have everything we need at home. If you'd like to give a gift, we’d be grateful for a contribution to help us build our next chapter.</p></ContentContainer>
+                <ContentContainer><p>We're lucky to have everything we need at home. If you'd like to give us a gift, we’d be grateful for a contribution to help us build our next chapter.</p></ContentContainer>
                 <div>
                     {/*<div style={{backgroundImage: `url(${ThankYou})`}} />*/}
                     <ThankYouImage src={ThankYou}/>

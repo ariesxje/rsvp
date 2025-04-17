@@ -36,7 +36,7 @@ const Schedule = ({
                     <SectionImageContainer>
                         <SectionImageSizer>
                             <SectionImageWrapper ratio={66.68}>
-                                <SectionImageBox style={{backgroundImage: 'url(https://withjoy.com/media/ebeefa4f8d2bbc6c303fdf0745c22656b4a50ba0d8daedb8f/4bb55380-19f2-11f0-84b5-5343c3402306-Artboard.jpeg?rendition=medium)'}}/>
+                                <SectionImageBox style={{backgroundImage: 'url(https://withjoy.com/media/ebeefa4f8d2bbc6c303fdf0745c22656b4a50ba0d8daedb8f/493732d0-1b60-11f0-b25f-936d9ec633d2-Artboard.jpeg?rendition=medium)'}}/>
                             </SectionImageWrapper>
                         </SectionImageSizer>
                     </SectionImageContainer>
@@ -127,10 +127,10 @@ const Schedule = ({
                                                 <div style={{marginTop: '1.5rem'}}>
                                                     <div style={{flexDirection: 'row', display: 'flex'}}>
                                                         <Text>
-                                                            We will be organising a shuttle bus to pick up guests from Melbourne city center to our Wedding Venue, and also dropping you back to the city after the wedding ends.
+                                                            We will be arranging a shuttle bus to transport guests from Melbourne city centre to our wedding venue, and back to the city after the celebrations conclude.
                                                             <br/>
                                                             <br/>
-                                                            Please let us know by private message if you would like to be added to the shuttle bus list, this will help us with head counts. The exact pick up location to be announced later, and we will notify you once confirmed.
+                                                            If you would like to reserve a spot on the shuttle, please send us a private message so we can include you in our headcount. The exact pick-up location will be confirmed closer to the date, and we’ll notify you as soon as it's finalised.
                                                         </Text>
                                                     </div>
                                                 </div>

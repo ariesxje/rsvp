@@ -1,5 +1,5 @@
 import {
-    BigContentColumn,
+    BigContentColumn, Link,
     SectionContainer, SectionImageBox,
     SectionImageContainer,
     SectionImageSizer,
@@ -10,6 +10,7 @@ import styled from "styled-components";
 import {useEffect, useRef} from "react";
 import {useElementAboveScreenMidpoint} from "./hooks/useElementAtScreenMidPoint.js";
 import useIsMobile from "./hooks/useWindowDimensions.js";
+import Map from './assets/images/map.png'
 
 const FAQ = ({
     onVisible,
@@ -42,11 +43,11 @@ const FAQ = ({
                     <div style={{flexDirection: 'column', display: 'flex'}}>
                         <BigContentColumn>
                             <Question>When is the RSVP deadline?</Question>
-                            <Answer><p>Please RSVP by the 1st of June, so we can have an estimate for catering. 🥰 We hope you’ll be able to join us on our special day, but we completely understand if you’re unable to make it. Your love and well wishes mean the world to us either way!</p></Answer>
+                            <Answer><p>Please RSVP by the 1st of June, so we can have an estimate for catering. 🥰 We hope you’ll be able to join us on our special day, but we completely understand if you’re unable to make it. Your love and well wishes mean the world to us either way! <Link href="#welcome">Click me to RSVP</Link></p></Answer>
                         </BigContentColumn>
                         <BigContentColumn>
                             <Question>Can I bring a date?</Question>
-                            <Answer><p>We send out invitations to each individual unless we don't know who your +1 is. If that's the case, please enter your +1's details when you RSVP. Thank you.</p></Answer>
+                            <Answer><p>We send out invitations to each individual unless we don't know who your +1 is. If that's the case, please enter your +1's details when you RSVP.</p></Answer>
                         </BigContentColumn>
                         <BigContentColumn>
                             <Question>Are kids welcome?</Question>
@@ -54,7 +55,7 @@ const FAQ = ({
                         </BigContentColumn>
                         <BigContentColumn>
                             <Question>What should I wear?</Question>
-                            <Answer><p>Garden formal. Please come in the below colours to match our theme: buttermilk, dusty blue, sage green, fudgie brown or charcoal black if you struggle finding the other colors.</p></Answer>
+                            <Answer><p>Garden formal. Please refer to the <Link href="#schedule">dress color code here</Link>. Ladies - Let's avoid black!</p></Answer>
                         </BigContentColumn>
                         <BigContentColumn>
                             <Question>What will the weather be like?</Question>
@@ -62,7 +63,8 @@ const FAQ = ({
                         </BigContentColumn>
                         <BigContentColumn>
                             <Question>Where should I park?</Question>
-                            <Answer><p>Free car parking is availble for guests, as you head down the entrance of The Stones driveway, veer left (follow "The Stables" signage) and head towards the hedges for convenient parking.</p></Answer>
+                            <Answer><p>Free car parking is available for guests, as you head down the entrance of The Stones driveway, veer left (follow "The Stables" signage) and head towards the hedges for convenient parking.</p></Answer>
+                            <img style={{marginTop: 20}} src={Map} />
                         </BigContentColumn>
                         <BigContentColumn>
                             <Question>Are the ceremony and reception locations wheelchair accessible?</Question>
@@ -74,11 +76,11 @@ const FAQ = ({
                         </BigContentColumn>
                         <BigContentColumn>
                             <Question>What kind of shoes should/shouldn't I wear?</Question>
-                            <Answer><p>Most of the wedding will be indoors, but there are grassy areas you might need to walk on to get to certain spots or for group photos. We recommend wearing chunky heels or sandals to stay comfortable—after all, we’d hate for anyone to ruin their nice shoes or risk an ankle injury!</p></Answer>
+                            <Answer><p>Most parts of the wedding will be indoors, but there are grassy areas you might need to walk on to get to certain spots like group photos. We recommend wearing chunky heels or sandals to stay comfortable—after all, we’d hate for anyone to ruin their nice shoes or risk an ankle injury!</p></Answer>
                         </BigContentColumn>
                         <BigContentColumn>
-                            <Question>Is it okay to take pictures with our phones and cameras during the ceremony?</Question>
-                            <Answer><p>We’d love for you to take photos and share them with us on our app, Joy! However, we kindly ask that you refrain from taking photos during the ceremony. The celebrant will let you know when it’s time to take a quick snap.</p></Answer>
+                            <Question>Is it okay to take pictures during the ceremony?</Question>
+                            <Answer><p>We’d love for you to take photos and share them with us. However, we kindly ask that you refrain from taking photos during the ceremony. The celebrant will let you know when it’s time to take a quick snap.</p></Answer>
                         </BigContentColumn>
                     </div>
                 </ContentContainer>

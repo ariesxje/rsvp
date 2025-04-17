@@ -121,7 +121,7 @@ const Travel = ({
                                                         <StyledClockIcon></StyledClockIcon>
                                                         <Text style={{marginLeft: '0.75rem'}}>11:00 PM</Text>
                                                     </Row>
-                                                    <Row><Text>There will also be a shuttle bus taking you back to the city after party. It's difficult to find other transporation from the venue at night.</Text></Row>
+                                                    <Row><Text>There will also be a shuttle bus taking you back to the city after party. It's difficult to find other transportation from the venue at night.</Text></Row>
                                                 </ContentColumn>
                                             </Item>
                                         </Item>
@@ -251,7 +251,7 @@ const Travel = ({
                                             <Item style={{marginTop: '1.5rem'}}>
                                                 <ContentColumn>
                                                     <div style={{flexDirection: 'row', display: 'flex', justifyContent: 'center'}}>
-                                                        <Link href="#accommodations">For more information on where to stay</Link>
+                                                        <Link href="#accommodationsTitle">For more information on where to stay</Link>
                                                     </div>
                                                 </ContentColumn>
                                             </Item>

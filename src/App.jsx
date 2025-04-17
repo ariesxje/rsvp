@@ -15,7 +15,7 @@ import VideoModal from "./VideoModal.jsx";
 
 const sectionImageMapping = {
     welcome: 'https://withjoy.com/media/ebeefa4f8d2bbc6c303fdf0745c22656b4a50ba0d8daedb8f/5124ecb0-1540-11f0-afd5-cf92046b8b40-IMG_9393.JPG?rendition=xlarge',
-    schedule: 'https://withjoy.com/media/ebeefa4f8d2bbc6c303fdf0745c22656b4a50ba0d8daedb8f/4bb55380-19f2-11f0-84b5-5343c3402306-Artboard.jpeg?rendition=xlarge',
+    schedule: 'https://withjoy.com/media/ebeefa4f8d2bbc6c303fdf0745c22656b4a50ba0d8daedb8f/493732d0-1b60-11f0-b25f-936d9ec633d2-Artboard.jpeg?rendition=xlarge',
     accommodations: 'https://withjoy.com/media/2652fd5c-609f-4ed1-9262-88fdf3f7d330/b0b1e5d0-1549-11f0-a0fc-b538aad12de8-IMG_9409.JPG?rendition=xlarge',
     travel: 'https://withjoy.com/media/ebeefa4f8d2bbc6c303fdf0745c22656b4a50ba0d8daedb8f/ec081470-1543-11f0-a0f9-d501c3f66cc8-weyne-yew-iFdPrhOPI_E-unsplash.jpg?rendition=xlarge',
     registry: 'https://withjoy.com/media/ebeefa4f8d2bbc6c303fdf0745c22656b4a50ba0d8daedb8f/e6886620-1549-11f0-a0fc-b538aad12de8-DSC01160.JPG?rendition=xlarge',

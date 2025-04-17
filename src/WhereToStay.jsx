@@ -29,7 +29,7 @@ const WhereToStay = ({
                         </SectionImageSizer>
                     </SectionImageContainer>
                 }
-                <Title>WHERE TO STAY</Title>
+                <Title id='accommodationsTitle'>WHERE TO STAY</Title>
                 <ParagraphWrapper>
                     <p>
                         For our lovely guests traveling from abroad to celebrate with us, we invite you to take this opportunity to explore the beautiful city of Melbourne. We highly recommend staying in or around the city—where great coffee ☕, delicious cuisines 🥘, and of course, boba 🧋, are never far away!
