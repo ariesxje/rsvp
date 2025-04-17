@@ -1006,7 +1006,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     text-transform: none;
     letter-spacing: 0;
     margin-top: 15px;
-`,ak=({onClose:e})=>{const[a,o]=Q.useState(!1);return Q.useEffect(()=>{const r=setTimeout(()=>{o(!0)},3e3);return()=>clearTimeout(r)},[]),v.jsx("div",{id:"modal-container2",children:v.jsxs("div",{className:"modal-background",children:[a&&v.jsx(ok,{onClick:e,children:v.jsx(rk,{})}),v.jsx("div",{className:"modal",style:{padding:0},children:v.jsx(ik,{children:v.jsx("iframe",{src:"https://player.vimeo.com/video/1073956329?h=7b50ff2ee3&app_id=122963",frameBorder:"0",allow:"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media",title:"KK wedding invatation","data-ready":"true"})})})]})})},ik=K.div`
+`,ak=({onClose:e})=>{const[a,o]=Q.useState(!1),r=Q.useRef(),s=Q.useRef();Q.useEffect(()=>{const f=setTimeout(()=>{o(!0)},3e3);return r.current=new Vimeo.Player(s.current),()=>clearTimeout(f)},[]);const d=()=>{var f;(f=r.current)==null||f.pause(),e()};return v.jsx("div",{id:"modal-container2",children:v.jsxs("div",{className:"modal-background",children:[a&&v.jsx(ok,{onClick:d,children:v.jsx(rk,{})}),v.jsx("div",{className:"modal",style:{padding:0},children:v.jsx(ik,{children:v.jsx("iframe",{src:"https://player.vimeo.com/video/1073956329?h=7b50ff2ee3&app_id=122963",frameBorder:"0",ref:s,allow:"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media",title:"KK wedding invatation","data-ready":"true",id:"myVimeo"})})})]})})},ik=K.div`
     position: relative;
     aspect-ratio: 240 / 427;
     height: 100vh;

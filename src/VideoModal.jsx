@@ -1,24 +1,33 @@
 import styled from "styled-components";
 import CrossIcon from "./svg/cross.jsx";
-import {useEffect, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 
 const VideoModal = ({
     onClose
                     }) => {
     const [showCloseButton, setShowCloseButton] = useState(false)
+    const playerRef = useRef();
+    const iframeRef = useRef();
 
     useEffect(() => {
         const timeout = setTimeout(() => {
             setShowCloseButton(true)
         }, 3000)
 
+        playerRef.current = new Vimeo.Player(iframeRef.current);
+
         return () => clearTimeout(timeout)
     }, []);
+
+    const closeAndPauseVideo = () => {
+        playerRef.current?.pause();
+        onClose();
+    }
 
     return (
         <div  id="modal-container2">
             <div className="modal-background">
-                {showCloseButton && <CloseButton onClick={onClose}><StyledCloseIcon/></CloseButton>}
+                {showCloseButton && <CloseButton onClick={closeAndPauseVideo}><StyledCloseIcon/></CloseButton>}
                 <div className="modal" style={{padding: 0}}>
                     <VideoContainer>
                         {/*<iframe*/}
@@ -29,8 +38,9 @@ const VideoModal = ({
                         {/*    title="KK wedding invatation"></iframe>*/}
                         <iframe src="https://player.vimeo.com/video/1073956329?h=7b50ff2ee3&amp;app_id=122963"
                                  frameBorder="0"
+                                ref={iframeRef}
                                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-                                title="KK wedding invatation" data-ready="true"></iframe>
+                                title="KK wedding invatation" data-ready="true" id="myVimeo"></iframe>
                     </VideoContainer>
                 </div>
             </div>
