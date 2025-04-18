@@ -144,7 +144,7 @@ const MessageContainer = styled.div`
     left: 50%;
     transform: translateX(-50%);
     width: 200px;
-    bottom: 0;
+    bottom: 31%;
 `
 
 const SeeMoreButton = styled.button`

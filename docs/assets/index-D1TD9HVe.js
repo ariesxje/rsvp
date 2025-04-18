@@ -1058,7 +1058,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     left: 50%;
     transform: translateX(-50%);
     width: 200px;
-    bottom: 0;
+    bottom: 31%;
 `,bk=K.button`
     background: rgba(0, 0, 0, 0.8);
     color: white;
