@@ -360,7 +360,7 @@ Error generating stack: `+i.message+`
     -webkit-box-pack: end;
     justify-content: flex-end;
     flex-direction: column;
-    font-size: 100px;
+    font-size: 40px;
 `,f8=K.div`
     margin-top: 1rem;
 `,b8=K.p`

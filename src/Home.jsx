@@ -277,7 +277,7 @@ const TitleWrapper = styled.div`
     -webkit-box-pack: end;
     justify-content: flex-end;
     flex-direction: column;
-    font-size: 100px;
+    font-size: 40px;
 `
 
 const SubtitleContainer = styled.div`
